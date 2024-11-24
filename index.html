@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Mailler - SaaS Website Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&family=Rubik:wght@400;500&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+        <style>
+            .navbar-brand {
+                display: flex;
+                align-items: center; /* Aligne verticalement l'image et le texte */
+                text-decoration: none; /* Supprime le soulignement */
+            }
+    
+            .navbar-logo {
+                width: 150px;
+    height: auto; /* Maintient les proportions */
+    margin-right: 10px;; /* Ajoute un espace entre l'image et le texte */
+            }
+    
+            .navbar-title {
+                font-size: 24px; /* Ajustez la taille du texte */
+                color: #007bff; /* Couleur bleue primaire */
+                margin: 0; /* Supprime les marges */
+            }
+        </style>
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid header position-relative overflow-hidden p-0">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="index.html" class="navbar-brand d-flex align-items-center p-0">
+                    <img src="img/logo4.png" alt="Logo" style="height: 50px; margin-right: 10px;">
+                    <h1 class="display-6 text-primary m-0">Nouvelle ère</h1>
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Acceuil</a>
+                        <a href="about.html" class="nav-item nav-link">Apropos de nous</a>
+                        <a href="service.html" class="nav-item nav-link">ODD</a>
+                      
+                        <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                    </div>
+                    <a href="#" class="btn btn-light border border-primary rounded-pill text-primary py-2 px-4 me-4">Log In</a>
+                    <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4">Sign Up</a>
+                </div>
+            </nav>
+
+
+            <!-- Hero Header Start -->
+            <div class="hero-header overflow-hidden px-5">
+                <div class="rotate-img">
+                    <img src="img/sty-1.png" class="img-fluid w-100" alt="Image de fond patriotique">
+                    <div class="rotate-sty-2"></div>
+                </div>
+                <div class="row gy-5 align-items-center" style="color: rgb(49, 57, 155);">
+                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s" style="color: rgb(53, 58, 137);">
+                        <h1 class="display-4 text-dark mb-4 wow fadeInUp" data-wow-delay="0.3s">Une Nouvelle Ère pour la Tunisie</h1>
+                        <p class="fs-4 mb-4 wow fadeInUp" data-wow-delay="0.5s">Téléchargez notre application "Nouvelle Ère" et participez activement à l'avenir de notre pays. Suivez les dernières actualités électorales et contribuez à un meilleur demain pour la Tunisie.</p>
+                        <a href="#" class="btn btn-primary rounded-pill py-3 px-5 wow fadeInUp" data-wow-delay="0.7s">Utiliser l'App</a>
+                    </div>
+                    <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
+                        <img src="img/rop.jpg" class="img-fluid w-100 h-100 rounded-image" alt="Image patriotique">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hero Header End -->
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- About Start -->
+        <div class="container-fluid overflow-hidden py-5" style="margin-top: 6rem;">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="RotateMoveLeft">
+                            <img src="img/tunisie-vote-concept-homme-main-urne-jour-election-vecteur-drapeau-tunisie_655111-3336 (1).jpg" class="img-fluid w-100 h-100 rounded-image" alt="Image de Nouvelle ère">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <h4 class="mb-1 text-primary">À Propos de Nous</h4>
+                        <h1 class="display-5 mb-4">Nouvelle Ère : Pour une Tunisie Innovante et Durable</h1>
+                        <p class="mb-4">Le parti Nouvelle Ère s'engage à promouvoir le progrès technologique, à renforcer le secteur industriel, et à protéger notre environnement. Ensemble, nous construisons une Tunisie moderne, prospère et respectueuse de la nature.</p>
+                        <ul>
+                            <li><strong>Technologie</strong> : Favoriser l'innovation et le développement des compétences numériques.</li>
+                            <li><strong>Industrie</strong> : Soutenir une industrie durable et créatrice d'emplois.</li>
+                            <li><strong>Environnement</strong> : Protéger notre patrimoine naturel pour les générations futures.</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary rounded-pill py-3 px-5">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- About End -->
+
+
+        <!-- Service Start -->
+        <div class="container-fluid py-5" style="margin-top: 6rem;">
+            <div class="container py-5">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 900px;">
+                    <h4 class="mb-1 text-primary">Flashs des Projets Futurs</h4>
+                    <h1 class="display-5 mb-4">Découvrez Nos Projets Innovants pour une Nouvelle Tunisie</h1>
+                    <p class="mb-0">Nous sommes engagés à bâtir un avenir meilleur grâce à des projets axés sur la technologie, l'industrie et la durabilité. Voici un aperçu des initiatives à venir qui transformeront notre société et notre économie.</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item text-center rounded p-4">
+                            <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i class="fas fa-industry fa-5x text-secondary"></i></div>
+                            <div class="service-content">
+                                <h4 class="mb-4">Industrie Verte</h4>
+                                <p class="mb-4">Promouvoir des projets industriels respectueux de l'environnement pour une croissance durable.</p>
+                                <a href="#" class="btn btn-light rounded-pill text-primary py-2 px-4">Lire Plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item text-center rounded p-4">
+                            <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i class="fas fa-seedling fa-5x text-secondary"></i></div>
+                            <div class="service-content">
+                                <h4 class="mb-4">Développement Durable</h4>
+                                <p class="mb-4">Initiatives pour préserver notre environnement et bâtir un avenir vert pour tous.</p>
+                                <a href="#" class="btn btn-light rounded-pill text-primary py-2 px-4">Lire Plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item text-center rounded p-4">
+                            <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i class="fas fa-robot fa-5x text-secondary"></i></div>
+                            <div class="service-content">
+                                <h4 class="mb-4">Technologie et Innovation</h4>
+                                <p class="mb-4">Investir dans les nouvelles technologies pour une économie numérique forte.</p>
+                                <a href="#" class="btn btn-light rounded-pill text-primary py-2 px-4">Lire Plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="service-item text-center rounded p-4">
+                            <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i class="fas fa-solar-panel fa-5x text-secondary"></i></div>
+                            <div class="service-content">
+                                <h4 class="mb-4">Énergie Renouvelable</h4>
+                                <p class="mb-4">Projets pour développer les énergies vertes et réduire notre dépendance aux énergies fossiles.</p>
+                                <a href="#" class="btn btn-light rounded-pill text-primary py-2 px-4">Lire Plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Service End -->
+
+    
+        <!-- 
+        <div class="container-fluid feature overflow-hidden py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 900px;">
+                    <h4 class="text-primary">Our Feature</h4>
+                    <h1 class="display-5 mb-4">Important Features For Email Marketing</h1>
+                    <p class="mb-0">Dolor sit amet consectetur, adipisicing elit. Ipsam, beatae maxime. Vel animi eveniet doloremque reiciendis soluta iste provident non rerum illum perferendis earum est architecto dolores vitae quia vero quod incidunt culpa corporis, porro doloribus. Voluptates nemo doloremque cum.
+                    </p>
+                </div>
+                <div class="row g-4 justify-content-center text-center mb-5">
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="text-center p-4">
+                            <div class="d-inline-block rounded bg-light p-4 mb-4"><i class="fas fa-envelope fa-5x text-secondary" style="color: red;"></i></div>
+                            <div class="feature-content">
+                                <a href="#" class="h4">Email Marketing 
+                                    <i class="fa fa-long-arrow-alt-right" style="color: red;"></i>
+                                </a>
+                                <p class="mt-4 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="text-center p-4">
+                            <div class="d-inline-block rounded bg-light p-4 mb-4"><i class="fas fa-mail-bulk fa-5x text-secondary"  style="color: red;"></i></div>
+                            <div class="feature-content">
+                                <a href="#" class="h4">Email Builder <i class="fa fa-long-arrow-alt-right"  style="color: red;"></i></a>
+                                <p class="mt-4 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.consectetur adipisicing elit
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="text-center rounded p-4">
+                            <div class="d-inline-block rounded bg-light p-4 mb-4"><i class="fas fa-sitemap fa-5x text-secondary" style="color: red;"></i></div>
+                            <div class="feature-content">
+                                <a href="#" class="h4">Customer Builder <i class="fa fa-long-arrow-alt-right "" style="color: red;"></i></a>
+                                <p class="mt-4 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.consectetur adipisicing elit
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="text-center rounded p-4">
+                            <div class="d-inline-block rounded bg-light p-4 mb-4"><i class="fas fa-tasks fa-5x text-secondary" style="color: red;"></i></div>
+                            <div class="feature-content">
+                                <a href="#" class="h4">Campaign Manager <i class="fa fa-long-arrow-alt-right"  style="color: red;"></i></a>
+                                <p class="mt-4 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.consectetur adipisicing elit
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="my-3">
+                            <a href="#" class="btn btn-primary d-inline rounded-pill px-5 py-3">More Features</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-5 pt-5" style="margin-top: 6rem;">
+                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                        <div class="feature-img RotateMoveLeft h-100" style="object-fit: cover;">
+                            <img src="img/features-1.png" class="img-fluid w-100 h-100" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.1s">
+                        <h4 class="text-primary">Fearutes</h4>
+                        <h1 class="display-5 mb-4">Push Your Visitors Into Happy Customers</h1>
+                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, suscipit itaque quaerat dicta porro illum, autem, molestias ut animi ab aspernatur dolorum officia nam dolore. Voluptatibus aliquam earum labore atque.
+                        </p>
+                        <div class="row g-4">
+                            <div class="col-6">
+                                <div class="d-flex">
+                                    <i class="fas fa-newspaper fa-4x text-secondary"style="color: red;"></i>
+                                    <div class="d-flex flex-column ms-3">
+                                        <h2 class="mb-0 fw-bold">285</h2>
+                                        <small class="text-dark">Created Projects</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex">
+                                    <i class="fas fa-users fa-4x text-secondary  style="color: red;""></i>
+                                    <div class="d-flex flex-column ms-3">
+                                        <h2 class="mb-0 fw-bold">6560</h2>
+                                        <small class="text-dark">Happy Clients</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-4">
+                            <a href="#" class="btn btn-primary rounded-pill py-3 px-5">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       Feature End -->
+
+
+        <!-- FAQ Start -->
+        <div class="container-fluid FAQ bg-light overflow-hidden py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                       <div class="accordion" id="accordionExample">
+                            <div class="accordion-item border-0 mb-4">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseTOne">
+                                        Pourquoi nous choisir en tant que parti politique ?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body my-2">
+                                        <h5>Technologie et innovation au cœur de notre démarche</h5>
+                                        <p>Notre parti place la technologie au centre de son action, en investissant dans les solutions innovantes qui transforment les secteurs clés tels que l'éducation, la santé, et l'économie. Nous croyons qu'une société prospère repose sur des outils digitaux accessibles à tous.</p>
+                                        <p>Nous travaillons à créer un écosystème technologique durable, propice à l'innovation industrielle, et mettons l'accent sur des politiques favorisant la recherche, le développement et l'entrepreneuriat.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 mb-4">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Engagement pour un avenir durable
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body my-2">
+                                        <h5>Protection de l'environnement et développement durable</h5>
+                                        <p>Nous plaçons l'environnement au centre de nos priorités, en mettant en œuvre des politiques concrètes pour lutter contre le changement climatique, réduire les émissions de carbone et préserver les ressources naturelles.</p>
+                                        <p>Grâce à des investissements dans les énergies renouvelables, le transport durable et l'économie circulaire, nous assurons un avenir meilleur pour les générations futures.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Éducation pour tous
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body my-2">
+                                        <h5>Une éducation moderne et inclusive</h5>
+                                        <p>Nous croyons que l'accès à une éducation de qualité est le droit de chaque citoyen. Notre parti s'engage à renforcer l'égalité des chances grâce à des programmes d'enseignement modernes, intégrant la technologie et préparant les jeunes aux défis de demain.</p>
+                                        <p>Nous œuvrons pour une collaboration active entre les institutions éducatives, les entreprises et le secteur public afin de créer des opportunités de formation adaptées aux évolutions du marché du travail.</p>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+                        <div class="FAQ-img RotateMoveRight rounded">
+                            <img src="img/5176422.jpg" class="img-fluid w-100 h-100 rounded-image" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- FAQ End -->
+
+
+        <!-- Pricing Start -->
+        <div class="container-fluid value-added py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 900px;">
+                    <h4 class="text-primary">Valeur Ajoutée</h4>
+                    <h1 class="display-5 mb-4">Pourquoi Choisir Nouvelle Ère de Parti Politique ?</h1>
+                    <p class="mb-0">Découvrez comment notre application révolutionne la gestion politique, facilite l'engagement citoyen et optimise la stratégie des partis politiques. Notre plateforme propose des outils puissants pour une gestion efficace et transparente.</p>
+                </div>
+                <div class="row g-5 justify-content-center">
+                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="value-item bg-light rounded text-center">
+                            <div class="text-center text-dark border-bottom d-flex flex-column justify-content-center p-4" style="width: 100%; height: 160px;">
+                                <p class="fs-2 fw-bold text-uppercase mb-0">Partenariat</p>
+                                <div class="d-flex justify-content-center">
+                                    <strong class="align-self-start">Gratuit</strong>
+                                </div>
+                            </div>
+                            <div class="text-start p-5">
+                                <p><i class="fas fa-check text-success me-1"></i> Accès à des outils de campagne</p>
+                                <p><i class="fas fa-check text-success me-1"></i> Formation et coaching politique</p>
+                                <p><i class="fas fa-check text-success me-1"></i> Suivi des actions des électeurs</p>
+                                <p><i class="fas fa-check text-success me-1"></i> Analyse de la performance électorale</p>
+                                <p><i class="fas fa-check text-success me-1"></i> Collaboration avec les partis partenaires</p>
+                                <p class="mb-4"><i class="fas fa-times text-danger me-1"></i> Accès aux fonctionnalités avancées</p>
+                                <button class="btn btn-light rounded-pill py-2 px-5" type="button">Rejoindre</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="value-item bg-light rounded text-center">
+                            <div class="value-item-offer">Populaire</div>
+                            <div class="text-center text-primary border-bottom d-flex flex-column justify-content-center p-4" style="width: 100%; height: 160px;">
+                                <p class="fs-2 fw-bold text-uppercase mb-0">Standard</p>
+                                <div class="d-flex justify-content-center">
+                                    <strong class="align-self-start">€</strong>
+                                    <p class="mb-0"><span class="display-5">19</span>/mo</p>
+                                </div>
+                            </div>
+                            <div class="text-start p-5">
+                                <p><i class="fas fa-check text-success me-1"></i> Outils de gestion des campagnes</p>
+                                <p><i class="fas fa-check text-success me-1"></i> Gestion des événements politiques</p>
+                                <p><i class="fas fa-check text-success me-1"></i> Outils d'analyse des électeurs</p>
+                                <p><i class="fas fa-check text-success me-1"></i> Dashboard personnalisé</p>
+                                <p><i class="fas fa-check text-success me-1"></i> Assistance et support en ligne</p>
+                                <p><i class="fas fa-times text-danger me-1"></i> Accès complet aux données internes</p>
+                                <button class="btn btn-light rounded-pill py-2 px-5" type="button">Commencer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="value-item bg-light rounded text-center">
+                            <div class="text-center text-secondary border-bottom d-flex flex-column justify-content-center p-4" style="width: 100%; height: 160px;">
+                                <p class="fs-2 fw-bold text-uppercase mb-0">Premium</p>
+                                <div class="d-flex justify-content-center">
+                                    <strong class="align-self-start">€</strong>
+                                    <p class="mb-0"><span class="display-5">39</span>/mo</p>
+                                </div>
+                            </div>
+                            <div class="text-start p-5">
+                                <p><i class="fas fa-check text-success me-1"></i> Outils de gestion avancée des campagnes</p>
+                                <p><i class="fas fa-check text-success me-1"></i> Analyse des tendances électorales</p>
+                                <p><i class="fas fa-check text-success me-1"></i> Accès aux rapports détaillés</p>
+                                <p><i class="fas fa-check text-success me-1"></i> Planification stratégique</p>
+
+                                <p><i class="fas fa-times text-danger me-1"></i> Accès limité aux fonctionnalités de gestion interne</p>
+                                <button class="btn btn-light rounded-pill py-2 px-5" type="button">Rejoindre</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Pricing End -->
+
+
+        <!-- Blog Start -->
+        <div class="container-fluid blog py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 900px;">
+                    <h4 class="text-primary">Nos ODD</h4>
+                    <h1 class="display-5 mb-4">Rejoignez-Nous Dans la Réalisation de Nos Objectifs Durables</h1>
+                    <p class="mb-0">Nos objectifs portent sur la technologie, l'environnement, l'infrastructure et l'éducation, afin de construire un avenir plus juste et durable pour tous.</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <!-- Technologie -->
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/imagees.jfif" class="img-fluid w-100" alt="Technologie">
+                                <div class="blog-info">
+                                    <span><i class="fa fa-clock"></i> Jan 15, 2024</span>
+                                    <div class="d-flex">
+                                        <span class="me-3"> 8 <i class="fa fa-heart"></i></span>
+                                        <a href="#" class="text-white">4 <i class="fa fa-comment"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-content text-dark border p-4">
+                                <h5 class="mb-4">Technologie pour le développement durable</h5>
+                                <p class="mb-4">Utiliser les technologies pour favoriser un développement économique et social inclusif et durable.</p>
+                                <a class="btn btn-light rounded-pill py-2 px-4" href="#">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Environnement -->
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/téléchargement.png" class="img-fluid w-100" alt="Environnement">
+                                <div class="blog-info">
+                                    <span><i class="fa fa-clock"></i> Jan 18, 2024</span>
+                                    <div class="d-flex">
+                                        <span class="me-3"> 14 <i class="fa fa-heart"></i></span>
+                                        <a href="#" class="text-white">6 <i class="fa fa-comment"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-content text-dark border p-4">
+                                <h5 class="mb-4">Préservation de l'environnement</h5>
+                                <p class="mb-4">Agir pour protéger notre planète et préserver ses ressources naturelles pour les générations futures.</p>
+                                <a class="btn btn-light rounded-pill py-2 px-4" href="#">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Infrastructure -->
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/téléchargement.jfif" class="img-fluid w-100" alt="Infrastructure">
+                                <div class="blog-info">
+                                    <span><i class="fa fa-clock"></i> Jan 22, 2024</span>
+                                    <div class="d-flex">
+                                        <span class="me-3"> 10 <i class="fa fa-heart"></i></span>
+                                        <a href="#" class="text-white">3 <i class="fa fa-comment"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-content text-dark border p-4">
+                                <h5 class="mb-4">Développement d'infrastructures durables</h5>
+                                <p class="mb-4">Investir dans des infrastructures résilientes et durables pour améliorer la qualité de vie et l'accès à des services essentiels.</p>
+                                <a class="btn btn-light rounded-pill py-2 px-4" href="#">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Éducation -->
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/F_SDG-goals_icons-individual-rgb-04.png" class="img-fluid w-100" alt="Éducation">
+                                <div class="blog-info">
+                                    <span><i class="fa fa-clock"></i> Jan 25, 2024</span>
+                                    <div class="d-flex">
+                                        <span class="me-3"> 18 <i class="fa fa-heart"></i></span>
+                                        <a href="#" class="text-white">7 <i class="fa fa-comment"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-content text-dark border p-4">
+                                <h5 class="mb-4">Éducation et formation de qualité</h5>
+                                <p class="mb-4">Assurer une éducation de qualité, équitable et inclusive pour promouvoir des opportunités d'apprentissage tout au long de la vie.</p>
+                                <a class="btn btn-light rounded-pill py-2 px-4" href="#">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Blog End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-fluid testimonial py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 900px;">
+                    <h4 class="text-primary">Témoignages</h4>
+                    <h1 class="display-5 mb-4">Ce Que Nos Partisans Disent de Nous</h1>
+                    <p class="mb-0">Notre parti est soutenu par des citoyens engagés qui croient en un avenir meilleur. Découvrez leurs témoignages et leur vision pour un changement positif et durable.</p>
+                </div>
+                <div class="testimonial-carousel owl-carousel wow zoomInDown" data-wow-delay="0.2s">
+                    <!-- Témoignage 1 -->
+                    <div class="testimonial-item" data-dot="<img class='img-fluid' src='img/testimonial-img-1.jpg' alt=''>">
+                        <div class="testimonial-inner text-center p-5">
+                            <div class="d-flex align-items-center justify-content-center mb-4">
+                                <div class="testimonial-inner-img border border-primary border-3 me-4" style="width: 100px; height: 100px; border-radius: 50%;">
+                                    <img src="img/testimonial-img-1.jpg" class="img-fluid rounded-circle" alt="Témoin 1">
+                                </div>
+                                <div>
+                                    <h5 class="mb-2">Marie Dupont</h5>
+                                    <p class="mb-0">Paris, France</p>
+                                </div>
+                            </div>
+                            <p class="fs-7">"Je soutiens ce parti parce qu'il met l'accent sur des politiques sociales qui profitent à toute la population. L'éducation, la santé, et l'égalité sont des priorités pour moi, et je crois qu'ils ont la vision nécessaire pour transformer notre avenir."</p>
+                            <div class="text-center">
+                                <div class="d-flex justify-content-center">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Témoignage 2 -->
+                    <div class="testimonial-item" data-dot="<img class='img-fluid' src='img/testimonial-img-2.jpg' alt=''>">
+                        <div class="testimonial-inner text-center p-5">
+                            <div class="d-flex align-items-center justify-content-center mb-4">
+                                <div class="testimonial-inner-img border border-primary border-3 me-4" style="width: 100px; height: 100px; border-radius: 50%;">
+                                    <img src="img/testimonial-img-2.jpg" class="img-fluid rounded-circle" alt="Témoin 2">
+                                </div>
+                                <div>
+                                    <h5 class="mb-2">Ahmed Benali</h5>
+                                    <p class="mb-0">Tunis, Tunisie</p>
+                                </div>
+                            </div>
+                            <p class="fs-7">"Ce parti offre une nouvelle perspective sur la politique et l'économie. Ils sont déterminés à résoudre les problèmes de chômage et de pauvreté. Je suis fier de les soutenir dans leur lutte pour un changement réel et durable."</p>
+                            <div class="text-center">
+                                <div class="d-flex justify-content-center">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Témoignage 3 -->
+                    <div class="testimonial-item" data-dot="<img class='img-fluid' src='img/testimonial-img-3.jpg' alt=''>">
+                        <div class="testimonial-inner text-center p-5">
+                            <div class="d-flex align-items-center justify-content-center mb-4">
+                                <div class="testimonial-inner-img border border-primary border-3 me-4" style="width: 100px; height: 100px; border-radius: 50%;">
+                                    <img src="img/testimonial-img-3.jpg" class="img-fluid rounded-circle" alt="Témoin 3">
+                                </div>
+                                <div>
+                                    <h5 class="mb-2">Sophie Durand</h5>
+                                    <p class="mb-0">Marseille, France</p>
+                                </div>
+                            </div>
+                            <p class="fs-7">"Je soutiens ce mouvement car il défend une politique de justice sociale, d'égalité des droits et de développement durable. Ils ont une vraie volonté d'améliorer la vie des citoyens en mettant en place des réformes concrètes."</p>
+                            <div class="text-center">
+                                <div class="d-flex justify-content-center">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Testimonial End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-dark mb-4">Company</h4>
+                            <a href=""> Why Mailler?</a>
+                            <a href=""> Our Features</a>
+                            <a href=""> Our Portfolio</a>
+                            <a href=""> About Us</a>
+                            <a href=""> Our Blog & News</a>
+                            <a href=""> Get In Touch</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-dark">Quick Links</h4>
+                            <a href=""> About Us</a>
+                            <a href=""> Contact Us</a>
+                            <a href=""> Privacy Policy</a>
+                            <a href=""> Terms & Conditions</a>
+                            <a href=""> Our Blog & News</a>
+                            <a href=""> Our Team</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-dark">Services</h4>
+                            <a href=""> All Services</a>
+                            <a href=""> Promotional Emails</a>
+                            <a href=""> Product Updates</a>
+                            <a href=""> Email Marketing</a>
+                            <a href=""> Acquistion Emails</a>
+                            <a href=""> Retention Emails</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-dark">Contact Info</h4>
+                            <a href=""><i class="fa fa-map-marker-alt me-2"></i> 123 Street, New York, USA</a>
+                            <a href=""><i class="fas fa-envelope me-2"></i> info@example.com</a>
+                            <a href=""><i class="fas fa-phone me-2"></i> +012 345 67890</a>
+                            <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-share fa-2x text-secondary me-2"></i>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-white"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
